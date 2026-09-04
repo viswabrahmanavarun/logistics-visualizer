@@ -2,15 +2,9 @@
 
 A sophisticated, React-based frontend application that simulates a truck moving through delivery locations. This project was built to demonstrate complex state management, map integration, and polished UI/UX design.
 
-## 📸 Previews
+## 📸 Preview
 
-### Light Mode Dashboard
-*(Add your light mode screenshot here by saving it as `screenshots/light-mode.png`)*
-![Light Mode](screenshots/light-mode.png)
-
-### Dark Mode Dashboard
-*(Add your dark mode screenshot here by saving it as `screenshots/dark-mode.png`)*
-![Dark Mode](screenshots/dark-mode.png)
+![Dashboard](screenshots/dashboard.png)
 
 ## ✨ Features
 
