@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+/* Force Tailwind v4 to use manual class-based dark mode instead of system preference */
+@custom-variant dark (&:where(.dark, .dark *));
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Leaflet map needs a specific height to render */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
