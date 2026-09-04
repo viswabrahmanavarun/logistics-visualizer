@@ -1,16 +1,54 @@
-# React + Vite
+# Logistics Truck Route Visualizer
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A sophisticated, React-based frontend application that simulates a truck moving through delivery locations. This project was built to demonstrate complex state management, map integration, and polished UI/UX design.
 
-Currently, two official plugins are available:
+## 📸 Previews
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Light Mode Dashboard
+*(Add your light mode screenshot here by saving it as `screenshots/light-mode.png`)*
+![Light Mode](screenshots/light-mode.png)
 
-## React Compiler
+### Dark Mode Dashboard
+*(Add your dark mode screenshot here by saving it as `screenshots/dark-mode.png`)*
+![Dark Mode](screenshots/dark-mode.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the Oxlint configuration
+- **Map Integration:** Displays an interactive map (OpenStreetMap) showing the Origin and 3 delivery points.
+- **Real-Time Simulation:** Animates a truck marker moving along the route using precise mathematical interpolation (`requestAnimationFrame`) instead of basic CSS transitions, ensuring smooth performance.
+- **Dynamic Status Dashboard:** 
+  - Calculates highly accurate distances on-the-fly using the Haversine formula.
+  - Live progress bars indicating overall route completion.
+- **Stop Sequence Timeline:** A custom horizontal stepper tracking past, current, and future delivery checkpoints.
+- **Bonus 1: Pause/Resume Tracking:** Ability to halt the simulation completely and resume precisely where it left off.
+- **Bonus 2: ETA Calculation:** Calculates remaining estimated time of arrival based on remaining distance and current speed.
+- **Bonus 3: Dark Mode:** A sleek dark theme with a custom CSS inversion filter on the map tiles to create a gorgeous dark-matter aesthetic.
+- **Bonus 4: Variable Speed Controls:** Ability to adjust the simulation speed (0.5x, 1x, 2x, 4x) for quick testing.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 🛠️ Technology Stack
+
+- **Framework:** React 18 (Vite)
+- **Styling:** Tailwind CSS v4
+- **Icons:** Lucide React
+- **Mapping:** Leaflet & React-Leaflet
+
+## 🚀 How to Run Locally
+
+1. **Clone the repository:**
+   ```bash
+   git clone <your-github-url>
+   cd logistics-visualizer
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **View the app:**
+   Open your browser and navigate to the local URL provided in your terminal (usually `http://localhost:5173`).
